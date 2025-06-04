@@ -1,21 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+</style>
 </head>
 <body>
-    <div id="sidebar-placeholder"></div>
 
-    <div class="content">
-        <h1>Welcome to the page</h1>
-        <p>This is the main content.</p>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#experience" class="w3-button w3-block w3-black">MY EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#awards" class="w3-button w3-block w3-black">AWARDS AND CERTIFICATES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header Section with Image and Intro -->
+<header id="about" class="w3-container w3-padding-64 w3-sand w3-grayscale">
+  <div class="w3-content w3-row-padding w3-round-large w3-padding">
+    
+    <!-- Left Column: Text -->
+    <div class="w3-half w3-padding-large">
+      <h1 class="w3-xxlarge w3-text-black"><b>Hi, I'm Hugo</b></h1>
+      <h5 class="w3-text-grey w3-large">Software Developer</h5>
+      <p class="w3-text-grey w3-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et consectetur urna. Suspendisse nunc sapien, rhoncus a libero eget, iaculis iaculis neque. Quisque sed finibus metus. Duis lectus erat, bibendum eget posuere sed, vestibulum nec dolor. Pellentesque quis nulla sit amet erat rutrum pulvinar.
+      </p>
+      <a href="#about" class="w3-button w3-border w3-border-red w3-text-red w3-hover-red w3-hover-text-white w3-margin-top">
+        LEARN MORE
+      </a>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="w3-half w3-center w3-padding-large">
+      <img src="images/jerry.jpg" alt="Hugo Hoang" class="w3-image w3-round-large w3-black" style="max-height: 300px;">
     </div>
     
-    <script src="./assets/js/sidebar-loader.js"></script>
+  </div>
+</header>
+
+<body class="w3-sand">
+
+<!-- Experience Container -->
+<div class="w3-container w3-light-grey w3-round-large w3-padding" id="experience">
+  <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MY EXPERIENCE</span></h5>
+  <div class="w3-content timeline" id="timelineContainer">
+    <!-- Items rendered here -->
+  </div>
+</div>
+
+<!-- Awards Container -->
+<div class="w3-container w3-grayscale w3-sand" id="awards">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-light-grey" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</body>
+
+<!-- Footer -->
+<footer class="w3-center w3-grayscale w3-sand w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
